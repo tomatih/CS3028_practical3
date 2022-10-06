@@ -3,10 +3,13 @@
 num1 = int(input("Enter a number: "))
 num2 = int(input("Enter a second number: "))
 
-our_sum = num1 + num2
+def do_action_on_numbers(a,b,action_name,action):
+	print(f"The {action_name} is: {action(a,b)}")
 
-print("The sum is",our_sum)
+actions = {
+	"sum": lambda x,y : x+y,
+	"difference": lambda x,y: x-y,
+}
 
-our_difference = num1 - num2
-
-print("The sum is",our_difference)
+for action in actions:
+	do_action_on_numbers(num1,num2,action,actions[action])
