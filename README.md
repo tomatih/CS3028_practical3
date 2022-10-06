@@ -2,3 +2,4 @@
 Pair programming exercise
 
 Mateusz Hurnik
+Rowan Cook
