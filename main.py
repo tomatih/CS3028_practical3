@@ -9,7 +9,8 @@ def do_action_on_numbers(a,b,action_name,action):
 actions = {
 	"sum": lambda x,y : x+y,
 	"difference": lambda x,y: x-y,
-	"product": lambda x,y: x*y
+	"product": lambda x,y: x*y,
+    "quotient": lambda x,y: x/y
 }
 
 for action in actions:
